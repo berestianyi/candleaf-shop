@@ -9,7 +9,7 @@ class Product(models.Model):
     description = models.CharField(max_length=500)
     quantity = models.IntegerField(default=20)
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
-    image = models.ImageField(blank=True, upload_to='images')
+    image = models.ImageField(blank=True, upload_to='products/images')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     category = models.ForeignKey('Category', on_delete=models.PROTECT)
