@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candleaf</title>
+    <link type="text/css" href="{% static 'products/css/style.css' %}" rel="stylesheet" />
+    {% block css %} {% endblock %}
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="{% url 'home' %}"><img src="{% static 'products/images/logo.png' %}" class="logo" alt="Candleaf" /></a>
+                <div class="navbar-wrap">
+                    <ul class="navbar-menu">
+                        <li><a href="{% url 'discovery' %}">Discovery</a></li>
+                        <li><a href="{% url 'about' %}">About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Ukrainian version</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-add">
+                    <img src="{% static 'products/images/acc.png' %}" href="#" class="account" alt="account">
+                    <img src="{% static 'products/images/bask.png' %}" href="#" class="basket" alt="basket">
+                </div>
+            </div>
+        </nav>
+</header>
+
+{% block body %} {% endblock %}
+
+<footer>
+    <div class="footer-logo-container">
+        <div class="footer-logo">
+            <img src="{% static 'products/images/footer logo.png' %}" alt="Candleaf">
+            <h3>Your natural candle made for<br /> your home and for your wellness.</h3>
+        </div>
+        <ul class="footer-ul">
+            <li><span>Discovery</span></li>
+            <li>New season</li>
+            <li>Most searched</li>
+            <li>Most selled</li>
+        </ul>
+        <ul class="footer-ul">
+            <li><span>About</span></li>
+            <li>Help</li>
+            <li>Shipping</li>
+            <li>Affiliate</li>
+        </ul>
+        <ul class="footer-ul">
+            <li><span>Info</span></li>
+            <li>Contact us</li>
+            <li>Privacy Policies</li>
+            <li>Terms & Conditions</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

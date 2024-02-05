@@ -1,0 +1,26 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Standard Candles",
+      "slug": "standard-candles"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Premium Candles",
+      "slug": "premium-candles"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Premium Kits",
+      "slug": "premium-kits"
+    }
+  }
+]

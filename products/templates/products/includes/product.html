@@ -1,0 +1,6 @@
+{% load static %}
+<div class="product">
+  <a href="{{ product.get_absolute_url }}"><div class="photo"><img src="{{ product.image.url }}" alt="{{ product.name }}"></div></a>
+  <p class="name"><a class='a-name' href="{{ product.get_absolute_url }}">{{ product.name }}</a></p>
+  <p class="price"><a class='a-price' href="{{ product.get_absolute_url }}">{{ product.price }}$</a></p>
+</div>

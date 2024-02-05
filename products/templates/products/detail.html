@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block css %}
+<link type="text/css" href="{% static 'products/css/detail.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div class="detail-container">
+    <div class="detail-img">
+        <img class="product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+        <p>All hand-made with natural soy wax, Candleaf is <br>made for your pleasure moments.</p>
+        <h1>🚚 FREE SHIPPING</h1>
+    </div>
+    <div class="detail-purchase">
+        <h1>{{ product.name }} Candleaf&#174;</h1>
+        <div class="purchase-container">
+            <div class="price-quantity"></div>
+            <div class="purchase-choices"></div>
+        </div>
+        <button class="add-to-cart">Add to cart</button>
+        <div class="product-description">
+            <p>{{ product.description}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

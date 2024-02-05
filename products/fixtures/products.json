@@ -1,0 +1,302 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Spiced Mint",
+      "price": "9.99",
+      "description": "Immerse your senses in the harmonious blend of our 'Spiced Mint' candle. Refreshing mint meets aromatic spices, creating a revitalizing ambiance that balances coolness and warmth. The invigorating fragrance unfolds with each flicker, transforming your space into a sanctuary of balance and freshness. Embrace the enticing aroma of 'Spiced Mint' for a sensory journey that is both revitalizing and comforting.",
+      "quantity": 27,
+      "slug": "spiced-mint",
+      "image": "images/spiced_mint.png",
+      "created_at": "2023-12-20T19:56:23.712Z",
+      "updated_at": "2023-12-20T19:56:23.712Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Fragrant Cinnamon",
+      "price": "9.99",
+      "description": "Immerse your senses in the warmth of our 'Fragrant Cinnamon' candle. Let the rich, spicy aroma fill your space with a comforting embrace. Evoking the essence of freshly ground cinnamon sticks, this candle transforms any setting into a cozy sanctuary. Embrace the sweet and spicy notes for a sensory journey of warmth and nostalgia.",
+      "quantity": 45,
+      "slug": "fragrant-cinnamon",
+      "image": "images/fragrant_cinnamon.png",
+      "created_at": "2023-12-20T19:56:58.606Z",
+      "updated_at": "2023-12-20T19:56:58.606Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Fresh Orange",
+      "price": "9.99",
+      "description": "Elevate your ambiance with our 'Fresh Orange' candle. Immerse in the invigorating fragrance of sun-kissed oranges, bringing a burst of freshness to your space. Each flicker of the flame releases lively citrus notes, creating a vibrant and uplifting atmosphere. Illuminate your moments with the bright and cheerful aura of 'Fresh Orange,' a delightful sensory experience.",
+      "quantity": 56,
+      "slug": "fresh-range",
+      "image": "images/fresh_orange.png",
+      "created_at": "2023-12-20T19:57:21.597Z",
+      "updated_at": "2023-12-20T19:57:21.597Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Juicy Lemon",
+      "price": "9.99",
+      "description": "Savor the zest of our 'Juicy Lemon' candle. Indulge in the invigorating scent of freshly squeezed lemons, filling your space with a burst of citrus delight. The lively and zesty notes dance in the air, creating an atmosphere that is both refreshing and uplifting. Illuminate your moments with the bright and spirited aura of 'Juicy Lemon' for a delightful sensory experience.",
+      "quantity": 23,
+      "slug": "juicy-lemon",
+      "image": "images/jucy_lemon.png",
+      "created_at": "2023-12-20T19:57:45.332Z",
+      "updated_at": "2023-12-20T19:57:45.332Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "name": "Summer Cherries",
+      "price": "9.99",
+      "description": "Capture the essence of summer with our 'Summer Cherries' candle. Indulge in the sweet nostalgia of sun-kissed cherries at their peak. The luscious aroma fills the air, creating a blissful ambiance that transports you to orchards in full bloom. Illuminate your space with the warmth of 'Summer Cherries,' a sensory celebration that evokes the joy and sweetness of the season.",
+      "quantity": 45,
+      "slug": "summer-cherries",
+      "image": "images/summer_cherries.png",
+      "created_at": "2023-12-20T19:58:09.642Z",
+      "updated_at": "2023-12-20T19:58:09.642Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "name": "Sweet Strawberry",
+      "price": "9.99",
+      "description": "Savor the irresistible charm of our 'Sweet Strawberry' candle. Immerse your senses in the succulent fragrance of sun-ripened strawberries. The luscious aroma fills the air, creating a warm and inviting atmosphere. Indulge in the delightful notes that evoke memories of ripe, juicy strawberries, turning every moment into a fragrant celebration. Illuminate your surroundings with the delectable allure of 'Sweet Strawberry.",
+      "quantity": 0,
+      "slug": "sweet-strawberry",
+      "image": "images/Sweet_Straweberry.png",
+      "created_at": "2023-12-20T19:58:33.571Z",
+      "updated_at": "2023-12-20T19:58:33.571Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "name": "Clean Lavender",
+      "price": "9.99",
+      "description": "Experience serenity with our 'Clean Lavender' candle. Immerse your space in the calming essence of pure lavender, meticulously crafted to evoke relaxation and purity. Transform your environment with each gentle flicker, creating an oasis of calm and tranquility.",
+      "quantity": 8,
+      "slug": "clean-lavender",
+      "image": "images/clean_lavander.png",
+      "created_at": "2023-12-20T19:58:53.374Z",
+      "updated_at": "2023-12-20T19:58:53.374Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "name": "Cool Blueberries",
+      "price": "9.99",
+      "description": "Revitalize your space with our 'Cool Blueberries' candle. Indulge in the invigorating scent of succulent blueberries, creating a refreshing atmosphere. Let the sweet, cool notes transport you to a tranquil blueberry orchard, where each flicker brings a burst of freshness. Elevate your moments with this cool and delightful fragrance.",
+      "quantity": 17,
+      "slug": "cool-blueberries",
+      "image": "images/cool_blueberries.png",
+      "created_at": "2023-12-20T19:59:15.445Z",
+      "updated_at": "2023-12-20T19:59:15.446Z",
+      "category": 1
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "name": "Red Apple",
+      "price": "19.99",
+      "description": "Experience the epitome of luxury with our premium 'Red Apple' candle. Immerse your space in the sophisticated aroma of freshly picked apples. Crafted with the finest ingredients, this candle evokes the essence of crisp, ripe apples in an opulent and captivating way. Illuminate your moments with the enchanting fragrance of 'Red Apple,' elevating your surroundings to a realm of elegance and indulgence.",
+      "quantity": 34,
+      "slug": "red-apple",
+      "image": "images/red_apple.png",
+      "created_at": "2024-01-07T14:17:51.808Z",
+      "updated_at": "2024-01-07T14:17:51.808Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "name": "Pink Love",
+      "price": "19.99",
+      "description": "Indulge in pure luxury with our premium 'Pink Love' candle. Immerse your space in the exquisite fragrance that captures the essence of love and romance. This meticulously crafted candle exudes a blend of delicate florals and soft, sweet notes, creating an ambiance of elegance and passion. Illuminate your moments with the enchanting aroma of 'Pink Love,' turning any space into a sanctuary of affection and sophistication.",
+      "quantity": 0,
+      "slug": "pink-love",
+      "image": "images/pink_love.png",
+      "created_at": "2024-01-07T14:18:37.418Z",
+      "updated_at": "2024-01-07T14:18:37.418Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "name": "Cold Winter",
+      "price": "19.99",
+      "description": "Embrace the essence of luxury with our premium 'Cold Winter' candle. Immerse your space in the enchanting aroma of a crisp, snowy day. This meticulously crafted candle evokes the tranquil beauty of winter with notes of pine, cedar, and a hint of peppermint. Illuminate your moments with the captivating fragrance of 'Cold Winter,' transforming any setting into a haven of serenity and sophistication.",
+      "quantity": 3,
+      "slug": "cold-winter",
+      "image": "images/cold_winter.png",
+      "created_at": "2024-01-07T14:20:00.997Z",
+      "updated_at": "2024-01-07T14:20:00.997Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Sweet Vanilla",
+      "price": "19.99",
+      "description": "Indulge in pure luxury with our premium 'Sweet Vanilla' candle. Immerse your space in the comforting embrace of rich, creamy vanilla. Meticulously crafted with the finest ingredients, this candle envelops your senses in a warm and sweet aroma that soothes and relaxes. Illuminate your moments with the exquisite fragrance of 'Sweet Vanilla,' turning any space into a sanctuary of indulgence and sophistication.",
+      "quantity": 10,
+      "slug": "sweet-vanilla",
+      "image": "images/sweet_vanilla.png",
+      "created_at": "2024-01-07T14:21:02.633Z",
+      "updated_at": "2024-01-07T14:21:02.633Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "name": "Light Spring",
+      "price": "19.99",
+      "description": "Experience the epitome of luxury with our premium 'Light Spring' candle. Immerse your space in the exquisite fragrance that captures the essence of a gentle spring breeze. Crafted with the finest ingredients, this candle combines fresh florals and subtle notes of citrus to create an ambiance of elegance and renewal. Illuminate your moments with the enchanting aroma of 'Light Spring,' elevating your surroundings to a realm of sophistication and serenity.",
+      "quantity": 35,
+      "slug": "light-spring",
+      "image": "images/light_spring.png",
+      "created_at": "2024-01-07T14:21:59.678Z",
+      "updated_at": "2024-01-07T14:21:59.678Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "name": "Flower taste",
+      "price": "19.99",
+      "description": "Indulge in the pinnacle of luxury with our premium 'Flower Taste' candle. Immerse your space in the exquisite fragrance that captures the essence of blooming flowers in full splendor. Crafted with the finest ingredients, this candle combines a symphony of floral notes with a touch of sweetness, creating an ambiance of elegance and opulence. Illuminate your moments with the enchanting aroma of 'Flower Taste,' turning any space into a sanctuary of sophistication and floral delight.",
+      "quantity": 0,
+      "slug": "flower-taste",
+      "image": "images/flower_taste.png",
+      "created_at": "2024-01-07T14:22:48.070Z",
+      "updated_at": "2024-01-07T14:22:48.070Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "name": "Brown Cake",
+      "price": "19.99",
+      "description": "Delight in the pinnacle of luxury with our premium 'Brown Cake' candle. Immerse your space in the delectable aroma that captures the essence of freshly baked treats. Crafted with the finest ingredients, this candle combines warm, indulgent notes of rich chocolate and sweet vanilla, creating an ambiance of pure decadence and comfort. Illuminate your moments with the enchanting aroma of 'Brown Cake,' turning any space into a sanctuary of sophistication and dessert-inspired bliss.",
+      "quantity": 23,
+      "slug": "brown-cake",
+      "image": "images/brown_cake.png",
+      "created_at": "2024-01-07T14:23:38.657Z",
+      "updated_at": "2024-01-07T14:23:38.657Z",
+      "category": 2
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "name": "Premium kit",
+      "price": "45.99",
+      "description": "Elevate your senses with our Premium Candle Trio. This exquisite kit includes three distinct candles, each meticulously crafted for a luxurious sensory experience.Experience elegance and renewal with this premium candle collection, perfect for gifting or elevating your own space. Illuminate your moments with the enchanting aromas of our Premium Candle Trio.",
+      "quantity": 10,
+      "slug": "premium-kit-one",
+      "image": "images/first_kit.png",
+      "created_at": "2024-01-07T14:25:56.900Z",
+      "updated_at": "2024-01-07T14:25:56.900Z",
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "name": "Premium kit 2",
+      "price": "45.99",
+      "description": "Elevate your senses with our Premium Candle Trio. This exquisite kit includes three distinct candles, each meticulously crafted for a luxurious sensory experience.Experience elegance and renewal with this premium candle collection, perfect for gifting or elevating your own space. Illuminate your moments with the enchanting aromas of our Premium Candle Trio.",
+      "quantity": 22,
+      "slug": "premium-kit-two",
+      "image": "images/second_kit.png",
+      "created_at": "2024-01-07T14:27:07.369Z",
+      "updated_at": "2024-01-07T14:27:07.369Z",
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "name": "Red Apple kit",
+      "price": "45.99",
+      "description": "Introducing our 'Red Apple Kit' - a delightful collection inspired by the crisp, juicy allure of freshly picked apples. Elevate your ambiance and celebrate the essence of apples with this curated collection. Illuminate your moments with the enchanting fragrances of our 'Red Apple Kit,' a perfect gift or treat for yourself.",
+      "quantity": 6,
+      "slug": "red-apple-kit",
+      "image": "images/third_kit.png",
+      "created_at": "2024-01-07T14:28:49.417Z",
+      "updated_at": "2024-01-07T14:28:49.417Z",
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "name": "Cold Winter Kit",
+      "price": "45.99",
+      "description": "Introducing our 'Cold Winter Kit' - a luxurious collection inspired by the tranquil beauty of a winter wonderland.Embrace the magic of winter and create a sanctuary of serenity with this curated collection. Illuminate your moments with the enchanting fragrances of our 'Cold Winter Kit,' a perfect gift or indulgence for the season.",
+      "quantity": 2,
+      "slug": "cold-winter-kit",
+      "image": "images/cold_winter_w1aNPgB.png",
+      "created_at": "2024-01-07T14:30:02.553Z",
+      "updated_at": "2024-01-07T14:30:02.553Z",
+      "category": 3
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "name": "Light Spring Kit",
+      "price": "45.99",
+      "description": "Introducing our 'Light Spring Kit' - a premium collection inspired by the gentle awakening of spring.Celebrate the season of renewal and elevate your ambiance with this curated collection. Illuminate your moments with the enchanting fragrances of our 'Light Spring Kit,' a perfect gift or indulgence for embracing the beauty of spring.",
+      "quantity": 1,
+      "slug": "light-spring-kit",
+      "image": "images/fifth_kit.png",
+      "created_at": "2024-01-07T14:30:58.566Z",
+      "updated_at": "2024-01-07T14:30:58.566Z",
+      "category": 3
+    }
+  }
+]

@@ -1,0 +1,14 @@
+.page-about-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.page-about {
+  max-width: 1000px ;
+  height: auto;
+  text-align: center;
+  margin-top: 50px ;
+  margin-bottom: 50px;
+}

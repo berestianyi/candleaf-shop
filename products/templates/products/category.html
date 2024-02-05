@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block css %}
+<link type="text/css" href="{% static 'products/css/discovery.css' %}" rel="stylesheet" />
+{% endblock %}
+
+
+{% block body %}
+<div class="discovery-products">
+    <div class="products">
+        {% for product in all_products %}
+        {% include 'products/includes/product.html' %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
