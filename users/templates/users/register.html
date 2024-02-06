@@ -6,29 +6,24 @@
 {% endblock %}
 
 {% block body %}
-<div class="login-container">
-    <div class="login-inputs-container">
-        <div class="input-container">
-            <label for="input" class="text">Enter your First name:</label>
-            <input type="text" placeholder="First name..." name="input" class="input">
+<div class="register-container">
+    <div class="register-inputs-container">
+        <p class="container-title">Create an Account</p>
+        <input class="name" name="text" type="text" placeholder="First Name">
+        <input class="name" name="text" type="text" placeholder="Last Name">
+        <input class="input-email" name="text" type="email" placeholder="Email Adress">
+        <input class="input-password" name="text" type="password" placeholder="Choose a Password">
+        <input class="input-password" name="text" type="password" placeholder="Repeat a Password">
+        <div class="sign-in">
+            <button class="sign-in-button" >
+                <a class="link" href="{% url 'users:login' %}">Sign In</a>
+            </button>
         </div>
-        <div class="input-container">
-            <label for="input" class="text">Enter your Last name:</label>
-            <input type="text" placeholder="Last name..." name="input" class="input">
+        <div class="create-account">
+            <button class="create-account-button">
+                <a class="link" href="">Create an Account</a>
+            </button>
         </div>
-        <div class="input-container">
-            <label for="input" class="text">Enter your email:</label>
-            <input type="email" id="email" placeholder="email..." name="email" class="input">
-        </div>
-        <div class="input-container">
-            <label for="input" class="text">Enter your password:</label>
-            <input type="password" id="password" placeholder="password..." name="password" class="input">
-        </div>
-        <div class="input-container">
-            <label for="input" class="text">Enter your password again:</label>
-            <input type="password2" id="password2" placeholder="password..." name="password2" class="input">
-        </div>
-
     </div>
 </div>
 {% endblock %}

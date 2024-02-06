@@ -3,6 +3,7 @@
   justify-content: center;
   align-content: center;
 }
+
 .login-inputs-container {
   display: flex;
   flex-direction: row;
@@ -87,9 +88,17 @@
   border: 1.5px solid #56B280;
   border-radius: 3px;
 }
+.create-account-button .link {
+  color: #56B280;
+}
 
 
 .create-account-button:hover {
   background-color: #56B280;
+  color: #FFFFFF;
+}
+
+.link, .link:hover, .link.active {
+  text-decoration: none;
   color: #FFFFFF;
 }

@@ -10,12 +10,15 @@
 <div class="login-container">
     <div class="login-inputs-container">
         <p class="container-title">Sign In</p>
-        <input class="input-email" name="text" type="text" placeholder="Enter your email">
-        <input class="input-password" name="text" type="text" placeholder="Enter your password">
-        <div class="create-account"><button class="create-account-button">Create an Account</button></div>
+        <input class="input-email" name="text" type="email" placeholder="Enter your email">
+        <input class="input-password" name="text" type="password" placeholder="Enter your password">
+        <div class="create-account">
+            <button class="create-account-button">
+                <a class="link" href="{% url 'users:register' %}">Create an Account</a>
+            </button>
+        </div>
         <div class="sign-in"><button class="sign-in-button">Sign In</button></div>
     </div>
-
 </div>
 
 {% endblock %}
