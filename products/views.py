@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from .models import Product, Category
 
+
 def index(request):
     products_data = Product.objects.all()
     context = {

@@ -14,17 +14,17 @@
 <header>
         <nav class="navbar">
             <div class="container">
-                <a href="{% url 'home' %}"><img src="{% static 'products/images/logo.png' %}" class="logo" alt="Candleaf" /></a>
+                <a href="{% url 'products:home' %}"><img src="{% static 'products/images/logo.png' %}" class="logo" alt="Candleaf" /></a>
                 <div class="navbar-wrap">
                     <ul class="navbar-menu">
-                        <li><a href="{% url 'discovery' %}">Discovery</a></li>
-                        <li><a href="{% url 'about' %}">About us</a></li>
+                        <li><a href="{% url 'products:discovery' %}">Discovery</a></li>
+                        <li><a href="{% url 'products:about' %}">About us</a></li>
                         <li><a href="">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-add">
-                    <img src="{% static 'products/images/acc.png' %}" href="#" class="account" alt="account">
-                    <img src="{% static 'products/images/bask.png' %}" href="#" class="basket" alt="basket">
+                    <a href="{% url 'users:login' %}"><img src="{% static 'products/images/acc.png' %}" class="account" alt="account"></a>
+                    <a href="#"><img src="{% static 'products/images/bask.png' %}" class="basket" alt="basket"></a>
                 </div>
             </div>
         </nav>

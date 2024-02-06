@@ -11,7 +11,7 @@
         <h1>🌱</h1>
         <h1>The nature candle</h1>
         <h3>All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </h3>
-        <button id="discoveryButton" data-static-url="{% url 'discovery' %}">Discovery our collection</button>
+        <button id="discoveryButton" data-static-url="{% url 'products:discovery' %}">Discovery our collection</button>
     </div>
 </div>
 <div class="products-text">
@@ -37,7 +37,7 @@
                 <li><span>Handmade: </span>All candles are craftly made with love.</li>
                 <li><span>Long burning: </span>No more waste. Created for last long.</li>
             </ul>
-            <button id="aboutButton" data-static-url="{% url 'about' %}">Learn more</button>
+            <button id="aboutButton" data-static-url="{% url 'products:about' %}">Learn more</button>
         </div>
         <div class="info-image">
             <img  src="{% static 'products/images/info.png' %}">

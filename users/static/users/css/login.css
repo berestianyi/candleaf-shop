@@ -1,0 +1,95 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.login-inputs-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 1.5px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container-title {
+  font-size: 20px;
+  margin-right: 300px;
+  height: 10px;
+}
+
+.login-inputs-container input {
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.login-inputs-container input:hover {
+  border: 2px solid #56B280;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.sign-in {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+
+.create-account {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 180px;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sign-in-button {
+  background: #56B280;
+  width: 180px;
+  height: 40px;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.sign-in-button:hover {
+  background-color:#448f66;
+}
+
+.create-account-button {
+  background: #FFFFFF;
+  width: 180px;
+  height: 40px;
+  color: #56B280;
+  font-size: 18px;
+  border: 1.5px solid #56B280;
+  border-radius: 3px;
+}
+
+
+.create-account-button:hover {
+  background-color: #56B280;
+  color: #FFFFFF;
+}
