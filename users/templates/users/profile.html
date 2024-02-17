@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block css %}
+<link type="text/css" href="{% static 'users/css/profile.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="profile-container">
+        <div class="photo-container">
+            <div class="photo">
+                <img src="{% static 'users/images/user-avatar.png' %}" alt="">
+            </div>
+        </div>
+        <button class="photo-change-button"> Change photo</button>
+        <div class="profile-info">
+            <label>Name:
+                <input>
+            </label>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

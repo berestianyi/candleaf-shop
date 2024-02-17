@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+.photo {
+  width: 132px;
+  height: 132px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.photo img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.photo-change-button  {
+  background: #56B280;
+  width: 180px;
+  height: 40px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+}
+
+.photo-change-button :hover {
+  background-color:#448f66;
+}
+
+.profile-info{
+    width: 100%;
+    height: auto;
+}

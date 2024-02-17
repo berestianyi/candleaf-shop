@@ -7,22 +7,22 @@
 
 {% block body %}
 <div class="register-container">
-    <form class="register-inputs-container">
+    <form action="{% url 'users:register' %}" method="post" class="register-inputs-container">
+        {% csrf_token %}
         <p class="container-title">Create an Account</p>
-        <input class="name" name="text" type="text" placeholder="First Name">
-        <input class="name" name="text" type="text" placeholder="Last Name">
-        <input class="input-email" name="text" type="email" placeholder="Email Adress">
-        <input class="input-password" name="text" type="password" placeholder="Choose a Password">
-        <input class="input-password" name="text" type="password" placeholder="Repeat a Password">
+        {{ form.username }}
+        {{ form.first_name }}
+        {{ form.last_name }}
+        {{ form.email }}
+        {{ form.password1 }}
+        {{ form.password2 }}
         <div class="sign-in">
             <button class="sign-in-button" >
                 <a class="link" href="{% url 'users:login' %}">Sign In</a>
             </button>
         </div>
         <div class="create-account">
-            <button class="create-account-button">
-                <a class="link" href="">Create an Account</a>
-            </button>
+            <button class="create-account-button" type="submit">Create an Account</button>
         </div>
     </form>
 </div>

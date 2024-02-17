@@ -11,14 +11,18 @@
     <form action="{% url 'users:login' %}" method="post" class="login-inputs-container">
         {% csrf_token %}
         <p class="container-title">Sign In</p>
-        <input class="input-email" name="text" type="email" placeholder="Enter your email">
-        <input class="input-password" name="text" type="password" placeholder="Enter your password">
+        {{ form.username }}
+        {{ form.password }}
         <div class="create-account">
             <button class="create-account-button">
                 <a class="link" href="{% url 'users:register' %}">Create an Account</a>
             </button>
         </div>
-        <div class="sign-in"><button class="sign-in-button">Sign In</button></div>
+        <div class="sign-in">
+            <a class="link">
+                <button class="sign-in-button" type="submit">Sign In</button>
+            </a>
+        </div>
     </form>
 </div>
 
