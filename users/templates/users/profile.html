@@ -7,19 +7,26 @@
 
 {% block body %}
 <div class="container">
-    <div class="profile-container">
+    <form class="profile-container" action="{% url 'users:profile' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
         <div class="photo-container">
             <div class="photo">
-                <img src="{% static 'users/images/user-avatar.png' %}" alt="">
+                <img src="{% if user.image %} {{ user.image.url }} {% else %} {% static 'users/images/user-avatar.png' %} {% endif %}" alt="">
             </div>
         </div>
-        <button class="photo-change-button"> Change photo</button>
-        <div class="profile-info">
-            <label>Name:
-                <input>
-            </label>
-
+        <label for="file-upload" class="photo-change-button">Change photo</label>
+        {{ form.image }}
+        <div class="profile-inputs-container">
+            <label>First name:</label>
+            {{ form.first_name }}
+            <label>Last name:</label>
+            {{ form.last_name }}
+            <label>Email:</label>
+            {{ form.email }}
+            <label>Username:</label>
+            {{ form.username }}
         </div>
-    </div>
+        <button class="save-changes" type="submit">Save changes</button>
+    </form>
 </div>
 {% endblock %}

@@ -27,6 +27,11 @@ class UserRegistrationForm(UserCreationForm):
 
 
 class UserProfileForm(UserChangeForm):
+    username = forms.CharField(widget=forms.TextInput(attrs={'readonly': True, 'class': 'read'}))
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'readonly': True, 'class': 'read'}))
+    image = forms.ImageField(widget=forms.FileInput(attrs={
+        'class': 'photo-change-button-input', 'value': 'Change photo', 'type': 'file', 'id': 'file-upload'
+    }), required=False)
 
     class Meta:
         model = User

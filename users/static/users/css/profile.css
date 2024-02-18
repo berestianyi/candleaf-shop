@@ -38,6 +38,66 @@
 }
 
 .photo-change-button  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+  background: #56B280;
+  width: 180px;
+  height: 30px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+}
+
+.photo-change-button:hover {
+  background-color:#448f66;
+}
+
+.photo-change-button-input {
+    display: none;
+}
+
+.profile-inputs-container {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-inputs-container input {
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.profile-inputs-container input:hover {
+  border: 2px solid #56B280;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.read {
+    background: #eeeeee;
+}
+
+.profile-inputs-container label {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.save-changes {
   background: #56B280;
   width: 180px;
   height: 40px;
@@ -45,13 +105,9 @@
   font-size: 18px;
   border: none;
   border-radius: 3px;
+    margin-bottom: 100px;
 }
 
-.photo-change-button :hover {
+.save-changes:hover {
   background-color:#448f66;
-}
-
-.profile-info{
-    width: 100%;
-    height: auto;
 }
