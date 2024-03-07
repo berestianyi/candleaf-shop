@@ -4,6 +4,30 @@
   align-content: center;
 }
 
+.login-container-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-top: 50px;
+}
+
+.login-error-container {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: #eeb1b4;
+  color: #ee5c5a;
+  border: 1.5px solid #ee5c5a;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .login-inputs-container {
   display: flex;
   flex-direction: row;
@@ -12,7 +36,7 @@
   align-content: center;
   width: 400px;
   height: auto;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 100px;
   border: 1.5px solid lightgrey;
   border-radius: 5px;
