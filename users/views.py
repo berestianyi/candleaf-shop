@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, redirect
 from django.urls import reverse
 from django.contrib import auth
 
@@ -45,3 +45,8 @@ def profile(request):
         form = UserProfileForm(instance=request.user)
     context = {'form': form}
     return render(request, 'users/profile.html', context=context)
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('products:home')
