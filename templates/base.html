@@ -14,7 +14,9 @@
 <header>
         <nav class="navbar">
             <div class="container">
-                <a href="{% url 'products:home' %}"><img src="{% static 'products/images/logo.png' %}" class="logo" alt="Candleaf" /></a>
+                <a href="{% url 'products:home' %}">
+                    <img src="{% static 'products/images/logo.png' %}" class="logo" alt="Candleaf" />
+                </a>
                 <div class="navbar-wrap">
                     <ul class="navbar-menu">
                         <li><a href="{% url 'products:discovery' %}">Discovery</a></li>
@@ -23,7 +25,15 @@
                     </ul>
                 </div>
                 <div class="navbar-add">
-                    <a href="{% url 'users:login' %}"><img src="{% static 'products/images/acc.png' %}" class="account" alt="account"></a>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'users:profile' %}">
+                            <img src="{% static 'products/images/acc_auth.png' %}" class="account" alt="account">
+                        </a>
+                    {% else %}
+                        <a href="{% url 'users:login' %}">
+                            <img src="{% static 'products/images/acc.png' %}" class="account" alt="account">
+                        </a>
+                    {% endif %}
                     <a href="#"><img src="{% static 'products/images/bask.png' %}" class="basket" alt="basket"></a>
                 </div>
             </div>
