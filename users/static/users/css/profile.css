@@ -2,8 +2,18 @@
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+}
+
+.container-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    height: auto;
 }
 
 .profile-container {
@@ -97,6 +107,7 @@
     margin-left: 10px;
 }
 
+
 .save-changes {
   background: #56B280;
   width: 180px;
@@ -105,9 +116,33 @@
   font-size: 18px;
   border: none;
   border-radius: 3px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .save-changes:hover {
   background-color:#448f66;
+}
+
+.log-out {
+  background: #eeb1b4;
+  width: 180px;
+  height: 40px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: solid 1px #ee5c5a;
+  border-radius: 3px;
+}
+
+.log-out:hover {
+  background-color: #ee5c5a;
+}
+
+.log-out-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: auto;
+    margin-bottom: 100px;
 }
