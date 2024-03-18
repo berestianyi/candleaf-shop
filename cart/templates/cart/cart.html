@@ -1,0 +1,76 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block css %}
+<link type="text/css" href="{% static 'cart/css/cart.css' %}" rel="stylesheet" />
+{% endblock %}
+
+
+{% block body %}
+<div class="flex flex-wrap justify-center content-center w-full h-auto">
+    <div class="flex flex-wrap justify-center content-center w-[1300px] h-auto">
+        <div class="flex flex-wrap flex-col justify-center items-center w-full h-auto">
+            <h1 class="text-[30px] mb-[30px] mt-[30px]">Your cart items</h1>
+            <hr/>
+            <a class="text-green"><p class="mb-[50px]">Back to shopping</p></a>
+        </div>
+        <div class="flex flex-wrap h-auto w-[1300px] mb-[100px]">
+            <div class="flex flex-wrap w-[1300px] h-[50px] border-b-[1px] border-grey">
+                <div class="w-[700px] h-auto"><p>Product</p></div>
+                <div class="flex flex-wrap justify-between w-[600px] h-auto">
+                    <p>Price</p>
+                    <p>Quantity</p>
+                    <p>Total</p>
+                </div>
+            </div>
+        {% if cart %}
+            {% for item in cart.products.all %}
+            <div class="flex flex-wrap w-[1300px] h-[200px] border-b-[1px] border-grey">
+                <div class="flex flex-wrap w-[700px] h-[200px]">
+                    <div class="flex flex-wrap justify-center content-center w-[250px] h-[200px]">
+                        <div class="flex flex-wrap w-[190px] h-[160px]">
+                            <img src="{{ item.product.image.url }}"  alt="{{ item.product.name }}" class="w-full h-auto">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-end w-[400px] h-[170px] mr-[50px] mt-[30px]">
+                        <h1 class="flex w-[400px] h-[40px] text-[22px]">{{ item.product.name }}</h1>
+                        <a href="{% url 'cart:remove' item.product.id %}"><p class="flex w-[400px] h-[80px] text-[17px] text-green">Remove</p></a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-start content-center w-[200px] h-[200px]">
+                    <p>{{ item.product.price }}$</p>
+                </div>
+                <div class="flex flex-wrap justify-center content-center w-[200px] h-[200px]">
+                    <div class="flex flex-wrap justify-between content-center w-[60px] h-[30px] pr-[5px] pl-[5px] border-[1px] border-green">
+                        <a href="{% url 'cart:add' item.product.id %}"><p class="flex text-[15px] text-green">+</p></a>
+                        <p class="flex text-[15px]">{{ item.quantity }}</p>
+                        <a href="{% url 'cart:subtract' item.product.id %}"><p class="flex text-[15px] text-green">-</p></a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-end content-center w-[200px] h-[200px]">
+                    <p>{{ item.total_price }}$</p>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="flex flex-wrap justify-end w-[1300px] h-[150px]">
+                <div class="flex flex-wrap w-[600px] h-[150px]">
+                    <div class="flex flex-wrap justify-start content-center w-[350px] h-[150px]">
+                        <div class="flex flex-wrap justify-between content-center ml-[100px] w-[300px] h-[40px]">
+                            <h1 class="text-[22px]">Sub-total</h1>
+                            <h1 class="text-[22px]">{{ cart.total_sum }}$</h1>
+                        </div>
+                        <p class="text-[13px] ml-[50px] mb-[70px]">Tax and shipping cost will be calculated later</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center content-center w-[250px] h-[150px]">
+                        <a class="text-white">
+                            <button class="w-[150px] h-[40px] bg-green caret-white text-[20px] border-none rounded-[3px] mb-[80px] hover:bg-dgreen">Check-out</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+</div>
+
+{% endblock %}
