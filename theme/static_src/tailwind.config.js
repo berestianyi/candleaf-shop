@@ -19,6 +19,7 @@ module.exports = {
          * Adjust the following line to match your project structure.
          */
         '../../templates/**/*.html',
+        '../../../templates/**/*.html',
 
         /*
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
@@ -42,26 +43,30 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'back-img': "url('../products/static/products/images/fullimg.png')",
+            },
+        },
+
         screens: {
             'sm': '480px',
             'md': '768px',
             'xl': '1440px',
         },
         fontFamily: {
-
+            sans: ['Poppins', 'sans-serif'],
+            serif: ['Roboto', 'serif'],
         },
         colors: {
             'white': '#F7F8FA',
             'dark': '#272727',
             'green': '#56B280',
             'grey': '#dcdcdc',
-            'dgreen': '#448f66'
+            'dgreen': '#448f66',
+            'pwhite': '#ffffff'
 
         },
-        fontSize: {
-            'xxs': '8px'
-        }
     },
     plugins: [
         /**
