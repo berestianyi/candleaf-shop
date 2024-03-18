@@ -1,6 +1,15 @@
 {% load static %}
 <div class="product">
   <a href="{{ product.get_absolute_url }}"><div class="photo"><img src="{{ product.image.url }}" alt="{{ product.name }}"></div></a>
-  <p class="name"><a class='a-name' href="{{ product.get_absolute_url }}">{{ product.name }}</a></p>
-  <p class="price"><a class='a-price' href="{{ product.get_absolute_url }}">{{ product.price }}$</a></p>
+    <div class="name-price-container">
+      <div class="name-container">
+          <p class="name"><a class='a-name' href="{{ product.get_absolute_url }}">{{ product.name }}</a></p>
+      </div>
+        <div class="basket-price">
+            <a href="{% url "cart:add" product.id %}" ><button class="add-to-basket">Add to cart</button></a>
+            <div class="price-container">
+                <p class="price"><a class='a-price' href="{{ product.get_absolute_url }}">{{ product.price }}$</a></p>
+            </div>
+        </div>
+    </div>
 </div>

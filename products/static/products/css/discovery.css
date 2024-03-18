@@ -1,7 +1,41 @@
-.discovery-products {
-  width: 1300px;
-  height: auto;
+.discovery-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
+
+}
+
+.categories {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories li {
+  margin: 0 1rem;
+}
+
+.discovery-products {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }

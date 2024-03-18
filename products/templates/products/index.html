@@ -1,90 +1,94 @@
 {% extends 'base.html'%}
 {% load static %}
+{% load tailwind_tags %}
 
 {% block css %}
 <link type="text/css" href="{% static 'products/css/index.css' %}" rel="stylesheet" />
 {% endblock %}
 
 {% block body %}
-<div class="mainpage-image">
-    <div class="mp-text">
-        <h1>🌱</h1>
-        <h1>The nature candle</h1>
-        <h3>All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </h3>
-        <button id="discoveryButton" data-static-url="{% url 'products:discovery' %}">Discovery our collection</button>
-    </div>
-</div>
-<div class="products-text">
-    <h1>Products</h1>
-    <h3>Order it for you or for your beloved ones </h3>
-</div>
-<div class="prod-container">
-    <div class="products">
-        {% for product in mainpage_products %}
-        {% include 'products/includes/product.html' %}
-        {% endfor %}
-    </div>
-</div>
-<div class="product-info">
-    <div class="product-info-child">
-        <div class="info-text">
-            <h1>Clean and</h1>
-            <h1>fragrant soy wax</h1>
-            <p>Made for your home and for your wellness</p>
-            <ul>
-                <li><span>Eco-sustainable: </span>All recyclable materials, 0% CO2 emissions</li>
-                <li><span>Hyphoallergenic: </span>100% natural, human friendly ingredients </li>
-                <li><span>Handmade: </span>All candles are craftly made with love.</li>
-                <li><span>Long burning: </span>No more waste. Created for last long.</li>
-            </ul>
-            <button id="aboutButton" data-static-url="{% url 'products:about' %}">Learn more</button>
-        </div>
-        <div class="info-image">
-            <img  src="{% static 'products/images/info.png' %}">
+<div class="flex flex-wrap flex-col">
+    <div class="flex flex-wrap items-center justify-center w-full h-1/5">
+        <img src="{% static 'products/images/fullimg.png' %}" alt="candleaf" class="w-full h-auto"/>
+        <div class="absolute flex flex-col items-center justify-center top-1/5 bg-white/80 xl:w-[700px] xl:h-[350px] md:w-[560px] md:h-[280px] sm:w-[420px] sm:h-[210px] backdrop-opacity-20">
+            <h1 class="xl:text-[50px] font-semibold sm:text-[30px]">🌱</h1>
+            <h1 class="text-[#1D252C] xl:text-[50px]  md:text-[40px] sm:text-[30px]">The nature candle</h1>
+            <h3 class="text-[#1D252C] xl:text-[20px] md:text-[18px] sm:text-[13px]">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </h3>
+            <button id="discoveryButton" data-static-url="{% url 'products:discovery' %}" class="w-1/2 h-[13%] bg-green hover:bg-dgreen text-white sm:text-[16px] md:text-[20px] xl:text-[25px] border-none rounded-sm mt-[10px]">Discovery our collection</button>
         </div>
     </div>
-</div>
-<div class="testimonials">
-    <h1>Testimonials</h1>
-    <h3>Some quotes from our happy customers</h3>
-    <div class="feedback-container">
-        <div class="feedback">
-            <img class="person" src="{% static 'products/images/luisa.png' %}">
-            <div class="stars">
-                {% include 'products/includes/stars.html' %}
+    <div class="flex flex-col items-center justify-center w-full h-[200px]">
+        <h1 class="text-5xl font-semibold">Products</h1>
+        <h3 class="text-[#5E6E89] font-medium">Order it for you or for your beloved ones </h3>
+    </div>
+    <div class="flex flex-wrap justify-center items-center w-full h-auto ">
+        <div class="flex flex-wrap justify-center items-center max-w-[1300px] w-full h-auto mb-[100px]">
+            {% for product in mainpage_products %}
+            {% include 'products/includes/product.html' %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-center w-full h-auto bg-white">
+        <div class="flex flex-wrap max-w-[1000px] justify-between items-center w-full min-h-[600px] h-auto bg-white">
+            <div class="flex flex-wrap flex-col w-[450px] h-[350px]">
+                <h1 class="text-[40px] leading-none">Clean and</h1>
+                <h1 class="text-[40px] leading-none">fragrant soy wax</h1>
+                <p class="text-[16px]">Made for your home and for your wellness</p>
+                <ul class="mt-[40px] list-none leading-normal">
+                    <li class="pl-8 " style="background-image: url(/products/images/galochka.svg); background-size: 1.4rem 1.4rem;"><span>Eco-sustainable: </span>All recyclable materials, 0% CO2 emissions</li>
+                    <li class="pl-8 " style="background-image: url(/products/images/galochka.svg); background-size: 1.4rem 1.4rem;"><span>Hyphoallergenic: </span>100% natural, human friendly ingredients </li>
+                    <li class="pl-8 " style="background-image: url(/products/images/galochka.svg); background-size: 1.4rem 1.4rem;"><span>Handmade: </span>All candles are craftly made with love.</li>
+                    <li class="pl-8 " style="background-image: url(/products/images/galochka.svg); background-size: 1.4rem 1.4rem;"><span>Long burning: </span>No more waste. Created for last long.</li>
+                </ul>
+                <button id="aboutButton" data-static-url="{% url 'products:about' %}">Learn more</button>
             </div>
-            <h1>“I love it! No more air</h1>
-            <h2>fresheners”</h2>
-            <h3>Luisa</h3>
-        </div>
-        <div class="feedback">
-            <img class="person" src="{% static 'products/images/eduardo.png' %}">
-            <div class="stars">
-                {% include 'products/includes/stars.html' %}
+            <div class=" flex w-[480px] h-auto">
+                <img src="{% static 'products/images/info.png' %}" alt="candleaf">
             </div>
-            <h1>“Raccomended for </h1>
-            <h2>everyone”</h2>
-            <h3>Edoardo</h3>
-        </div>
-        <div class="feedback">
-            <img class="person" src="{% static 'products/images/mart.png' %}">
-            <div class="stars">
-                {% include 'products/includes/stars.html' %}
-            </div>
-            <h1>“Looks very natural, the</h1>
-            <h2> smell is awesome”</h2>
-            <h3>Mart</h3>
         </div>
     </div>
-</div>
+    <div class="testimonials">
+        <h1>Testimonials</h1>
+        <h3>Some quotes from our happy customers</h3>
+        <div class="feedback-container">
+            <div class="feedback">
+                <img class="person" src="{% static 'products/images/luisa.png' %}">
+                <div class="stars">
+                    {% include 'products/includes/stars.html' %}
+                </div>
+                <h1>“I love it! No more air</h1>
+                <h2>fresheners”</h2>
+                <h3>Luisa</h3>
+            </div>
+            <div class="feedback">
+                <img class="person" src="{% static 'products/images/eduardo.png' %}">
+                <div class="stars">
+                    {% include 'products/includes/stars.html' %}
+                </div>
+                <h1>“Raccomended for </h1>
+                <h2>everyone”</h2>
+                <h3>Edoardo</h3>
+            </div>
+            <div class="feedback">
+                <img class="person" src="{% static 'products/images/mart.png' %}">
+                <div class="stars">
+                    {% include 'products/includes/stars.html' %}
+                </div>
+                <h1>“Looks very natural, the</h1>
+                <h2> smell is awesome”</h2>
+                <h3>Mart</h3>
+            </div>
+        </div>
+    </div>
 
-<div class="popular-product">
-    <h1>Popular</h1>
-    <h3>Our top selling product that you may like</h3>
-    <div class="pop-product">
-        {% for product in popular_products %}
-        {% include 'products/includes/product.html' %}
-        {% endfor %}
+    <div class="popular-product">
+        <h1>Popular</h1>
+        <h3>Our top selling product that you may like</h3>
+        <div class="pop-product">
+            {% for product in popular_products %}
+            {% include 'products/includes/product.html' %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 <script src="{% static 'products/js/index.js' %}"></script>

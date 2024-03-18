@@ -15,10 +15,21 @@
     <div class="detail-purchase">
         <h1>{{ product.name }} Candleaf&#174;</h1>
         <div class="purchase-container">
-            <div class="price-quantity"></div>
-            <div class="purchase-choices"></div>
+            <div class="price-quantity">
+                <div class="price"><h1>{{ product.price }}$</h1></div>
+                <div class="quantity"></div>
+            </div>
+            <div class="purchase-choices">
+                <ul>
+                    <li><span>Wax:</span> Top grade Soy wax that delivers a smoke less, consistent burn</li>
+                    <li><span>Fragrance:</span> Premium quality ingredients with natural essential oils</li>
+                    <li><span>Burning Time:</span> 70-75 hours</li>
+                    <li><span>Dimension:</span> 10cm x 5cm</li>
+                    <li><span>Weight:</span> 400g</li>
+                </ul>
+            </div>
         </div>
-        <button class="add-to-cart">Add to cart</button>
+        <a href="{% url 'cart:add' product.id %}"><button class="add-to-cart">Add to cart</button></a>
         <div class="product-description">
             <p>{{ product.description}}</p>
         </div>

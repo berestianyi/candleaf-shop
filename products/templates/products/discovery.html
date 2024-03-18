@@ -6,12 +6,22 @@
 {% endblock %}
 
 {% block body %}
-<div>Categories:</div>
-<div class="discovery-products">
-    <div class="products">
-        {% for product in all_products %}
-        {% include 'products/includes/product.html' %}
-        {% endfor %}
+<div class="discovery-container">
+    <div class="categories">
+        <ul>
+            <li>Categories:</li>
+            <li>Ordinary candle</li>
+            <li>Premium candle</li>
+            <li>Candle bundles</li>
+        </ul>
+
+    </div>
+    <div class="discovery-products">
+        <div class="products">
+            {% for product in all_products %}
+            {% include 'products/includes/product.html' %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}

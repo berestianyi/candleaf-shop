@@ -47,18 +47,32 @@
 }
 
 .price-quantity{
+  display: flex;
+  flex-wrap: wrap;
   width: 150px;
   height: 180px;
-  background: #272727;
   margin-bottom: 80px;
 }
 
-.purchase-choices{
+.purchase-choices {
+  display: flex;
+  flex-wrap: wrap;
   width: 340px;
   height: 180px;
-  background: #272727;
   margin-bottom: 80px;
 
+}
+
+.purchase-choices ul {
+  font-weight: normal;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.purchase-choices span {
+  font-weight: bold;
 }
 
 .add-to-cart {

@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candleaf</title>
+    {% tailwind_preload_css %}
+    {% tailwind_css %}
     <link type="text/css" href="{% static 'products/css/base.css' %}" rel="stylesheet" />
     {% block css %} {% endblock %}
-    {% tailwind_css %}
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+{#    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />#}
+{#    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />#}
 </head>
-<body>
+<body class="m-0 p-0 bg-pwhite">
 <header>
         <nav class="flex h-[75px] w-full">
             <div class="flex h-[75px] justify-between w-full items-center">
@@ -36,7 +37,7 @@
                             <img src="{% static 'products/images/acc.png' %}" class="w-[34px] h-[34px] mr-[25px]" alt="account">
                         </a>
                     {% endif %}
-                    <a href="{% url 'cart:cart_detail'  %}"><img src="{% static 'products/images/bask_full.png' %}" class="w-[29px] h-[28px]" alt="basket"></a>
+                    <a href="{% url 'cart:cart'  %}"><img src="{% static 'products/images/bask_full.png' %}" class="w-[29px] h-[28px]" alt="basket"></a>
                     <a><p class="relative right-[19px] top-[5px] text-white text-[8px]">113</p></a>
                 </div>
             </div>
