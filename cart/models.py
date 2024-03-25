@@ -18,5 +18,8 @@ class Cart(models.Model):
     def total_sum(self):
         return sum(product.total_price() for product in self.products.all())
 
+    def total_quantity(self):
+        return sum(product.quantity for product in self.products.all())
+
 
 
