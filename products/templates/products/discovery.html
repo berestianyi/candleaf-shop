@@ -6,18 +6,19 @@
 {% endblock %}
 
 {% block body %}
-<div class="discovery-container">
-    <div class="categories">
-        <ul>
-            <li>Categories:</li>
-            <li>Ordinary candle</li>
-            <li>Premium candle</li>
-            <li>Candle bundles</li>
+<div class="flex flex-wrap justify-center items-center w-full h-auto">
+    <div class="flex flex-wrap justify-center items-center w-[1300px] h-auto mt-[50px] ">
+        <ul class="flex flex-row justify-between">
+            <li class="mr-[20px]">Categories:</li>
+            <a href="{% url 'products:discovery' %}"><li class="mr-[20px]">All</li></a>
+            {% for type in category %}
+            <a href="{% url 'products:category' type.slug %}"><li class="mr-[20px]">{{ type.name }}</li></a>
+            {% endfor %}
         </ul>
 
     </div>
-    <div class="discovery-products">
-        <div class="products">
+    <div class="flex flex-wrap justify-center items-center w-full h-auto">
+        <div class="flex flex-wrap justify-center items-center w-full h-auto mb-[50px]">
             {% for product in all_products %}
             {% include 'products/includes/product.html' %}
             {% endfor %}
