@@ -24,7 +24,7 @@ def add_to_cart(request, product_id):
         cart_item.save()
 
     cart.products.add(cart_item)
-    return redirect('cart:cart')
+    return redirect(request.META.get('HTTP_REFERER', 'fallback_url'))
 
 
 def subtract_from_cart(request, product_id):
@@ -37,10 +37,10 @@ def subtract_from_cart(request, product_id):
             cart_item.save()
         else:
             cart_item.delete()
-    return redirect('cart:cart')
+    return redirect(request.META.get('HTTP_REFERER', 'fallback_url'))
 
 
 def remove_from_cart(request, product_id):
     cart_item = CartItem.objects.get(product_id=product_id)
     cart_item.delete()
-    return redirect('cart:cart')
+    return redirect(request.META.get('HTTP_REFERER', 'fallback_url'))
