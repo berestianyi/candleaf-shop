@@ -14,6 +14,7 @@
             <hr/>
             <a class="text-green"><p class="mb-[50px]">Back to shopping</p></a>
         </div>
+        {% if cart.products.exists %}
         <div class="flex flex-wrap h-auto w-[1300px] mb-[100px]">
             <div class="flex flex-wrap w-[1300px] h-[50px] border-b-[1px] border-grey">
                 <div class="w-[700px] h-auto"><p>Product</p></div>
@@ -23,7 +24,6 @@
                     <p>Total</p>
                 </div>
             </div>
-        {% if cart %}
             {% for item in cart.products.all %}
             <div class="flex flex-wrap w-[1300px] h-[200px] border-b-[1px] border-grey">
                 <div class="flex flex-wrap w-[700px] h-[200px]">
@@ -68,6 +68,10 @@
                     </div>
                 </div>
             </div>
+        {% else %}
+        <div class="flex w-full justify-center mb-[70px]">
+            <h1 class="text-[30px]">is empty</h1>
+        </div>
         {% endif %}
     </div>
 </div>

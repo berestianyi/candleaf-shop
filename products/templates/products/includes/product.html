@@ -1,14 +1,18 @@
 {% load static %}
-<div class="product">
-  <a href="{{ product.get_absolute_url }}"><div class="photo"><img src="{{ product.image.url }}" alt="{{ product.name }}"></div></a>
+<div class="flex flex-wrap flex-col w-[255px] h-[230px] m-[20px] bg-pwhite shadow-md">
+    <a href="{{ product.get_absolute_url }}">
+        <div class="flex w-[255px] h-[155px] bg-white">
+            <img class="flex w-[255px] h-auto" src="{{ product.image.url }}" alt="{{ product.name }}">
+        </div>
+    </a>
     <div class="name-price-container">
-      <div class="name-container">
-          <p class="name"><a class='a-name' href="{{ product.get_absolute_url }}">{{ product.name }}</a></p>
-      </div>
-        <div class="basket-price">
-            <a href="{% url "cart:add" product.id %}" ><button class="add-to-basket">Add to cart</button></a>
-            <div class="price-container">
-                <p class="price"><a class='a-price' href="{{ product.get_absolute_url }}">{{ product.price }}$</a></p>
+        <div class="flex flex-wrap w-[255px] h-[25px]">
+            <p class="text-[16px]"><a class='text-[ #0B254B]' href="{{ product.get_absolute_url }}">{{ product.name }}</a></p>
+        </div>
+        <div class="flex flex-row justify-between w-full h-[30px] items-center">
+            <a href="{% url "cart:add" product.id %}"><button class="w-[100px] h-[20px] bg-green text-white text-[12px] rounded-[3px] hover:bg-dgreen">Add to cart</button></a>
+            <div class="flex flex-wrap w-[50px] h-auto">
+                <p class="text-green text-[20px]"><a class='a-price' href="{{ product.get_absolute_url }}">{{ product.price }}$</a></p>
             </div>
         </div>
     </div>
