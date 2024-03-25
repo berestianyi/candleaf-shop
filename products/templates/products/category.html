@@ -1,17 +1,24 @@
 {% extends 'base.html'%}
 {% load static %}
 
-{% block css %}
-<link type="text/css" href="{% static 'products/css/discovery.css' %}" rel="stylesheet" />
-{% endblock %}
-
-
 {% block body %}
-<div class="discovery-products">
-    <div class="products">
-        {% for product in all_products %}
-        {% include 'products/includes/product.html' %}
-        {% endfor %}
+<div class="flex flex-wrap justify-center items-center w-full h-auto">
+    <div class="flex flex-wrap justify-center items-center w-[1300px] h-auto mt-[50px] ">
+        <ul class="flex flex-row justify-between">
+            <li class="mr-[20px]">Categories:</li>
+            <a href="{% url 'products:discovery' %}"><li class="mr-[20px]">All</li></a>
+            {% for type in category %}
+            <a href="{% url 'products:category' type.slug %}"><li class="mr-[20px]">{{ type.name }}</li></a>
+            {% endfor %}
+        </ul>
+
+    </div>
+    <div class="flex flex-wrap justify-center items-center w-full h-auto">
+        <div class="flex flex-wrap justify-center items-center w-full h-auto mb-[50px]">
+            {% for product in products %}
+            {% include 'products/includes/product.html' %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}
